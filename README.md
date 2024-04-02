@@ -12,4 +12,8 @@ This is a sample demo READ.md file for my **GitHub** repo.
 4. The System shall have 475 users
 5. The system is dumb
 
+
+* These should be bulet points
+* I think they are bullet points
+* Huh
    
