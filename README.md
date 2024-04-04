@@ -1,19 +1,10 @@
 # LaViuda
 ## Description:
-Mexican version of Whisky Poker 
+La Viuda is the mexican verison of Whiskey Poker where 2 or more players try to get the best poker hand. In between the players on the table are 5 cards faced down, the first player can either decide to switch their entire hand with the faced down cards or skip and let the next player decied. If smeone switches their hand, their cards end up on the table and the next person can choose to either swap one card or the entire hand to try to get the best hand. A round ends when someone knocks on the table and each person must show whatever hand they have and the end of that round. Each player gets 3 lives and the table gets one life, whoever loses all three lives first gets the tables life. The game keeps going till someone loses all their lives. 
 
 ### Purpose:
-This is a sample demo READ.md file for my **GitHub** repo.
+A fun game that the user can play against another person.
 
-### Requirements:
-1. The System shall track user activity
-  1. This is a test for sub-lists 
-3. The System shall self-destruct after 6 uses
-4. The System shall have 475 users
-5. The system is dumb
+## CRC: 
+![CRC](https://drive.google.com/file/d/1qW1zw_2uAzTw1an1F6LNOzUwISU1s7bM/view?usp=sharing)
 
-
-* These should be bulet points
-* I think they are bullet points
-* Huh
-   
