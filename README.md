@@ -5,5 +5,5 @@ La Viuda is the mexican verison of Whiskey Poker where 2 or more players try to 
 ### Purpose:
 A fun game that the user can play against another person.
 
-## CRC: 
-[La Viuda](https://github.com/MarkoCode1/LaViuda/files/14874783/La.Viuda.drawio.pdf)
+### CRC: 
+![Copy of La Viuda drawio](https://github.com/MarkoCode1/LaViuda/assets/158511287/7468c30f-64b5-443d-b485-a66048cfbbbd)
