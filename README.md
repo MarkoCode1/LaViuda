@@ -5,6 +5,7 @@ La Viuda is the mexican verison of Whiskey Poker where 2 or more players try to 
 ### Purpose:
 A fun game that the user can play against another person.
 
+# Week 1: 
 ### CRC: 
 ![Untitled Diagram drawio](https://github.com/MarkoCode1/LaViuda/assets/158511287/ed85870a-256c-4287-857b-5464b9c73a71)
 
@@ -17,5 +18,11 @@ A fun game that the user can play against another person.
 ![Scanned_20240405-0945-1](https://github.com/MarkoCode1/LaViuda/assets/158511287/5b3c07fd-fa3b-4d89-bf4b-32426b330d61)
 
 Th picture above shows a rought outline of my projoct in what I hope it would look like (Only a lot better). As you can see the top of the page shows the tables hand and below that will be the players and the buttons they can interact with. Those buttons are (From left to right) Switch (Allows a player to switch one card with a tables card, Swap (Allows a player to swap their entire hand for the table hand, Skip Turn (Self Explanatory), and Knock (Ends the round for every player). When a player hits the skip button the cars will switch over to the next player and show their cards. 
+
+# Week 2: 
+So far I have added the code I have written in my repository under La Viuda folder. I didn't have a lot of time to write code and a lot of it is a mess right now but I plan on refining it soon.
+
+Created several classes (I may or may not keep all of them)
+Wrote code and some tests 
 
 
