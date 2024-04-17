@@ -1,16 +1,41 @@
 package laViuda;
 
-public class Hand extends Card {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Hand extends Deck {
 	
-	private static Card card;
-	
-	public Hand(Card card) {
-		this.card = card;
+	private int count = 5;
+
+	public Hand(String[] suits, String[] ranks) {
+		super(suits, ranks);
+		
 	}
+
 	
-	public static void main(String[] args) {
-		System.out.println("Your card is the " + card.getRandomSuit() + " of " + card.getRandomRank());
+	public List<String> getRandomCards(int count) {
+        List<String> fullDeck = deck();
+        List<String> randomCards = new ArrayList<>();
+        Random random = new Random();
+
+        while (randomCards.size() < count && !fullDeck.isEmpty()) {
+            int index = random.nextInt(fullDeck.size());
+            randomCards.add(fullDeck.remove(index));
+        }
+
+        return randomCards;
+    }
+
+	public int getCount() {
+		return count;
 	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	
 	
 }
 	
