@@ -6,8 +6,7 @@ import java.util.Random;
 
 public class Hand extends Deck {
 	
-	private int count = 5;
-
+	
 	public Hand(String[] suits, String[] ranks) {
 		super(suits, ranks);
 		
@@ -27,13 +26,6 @@ public class Hand extends Deck {
         return randomCards;
     }
 
-	public int getCount() {
-		return count;
-	}
-
-	public void setCount(int count) {
-		this.count = count;
-	}
 
 	
 	

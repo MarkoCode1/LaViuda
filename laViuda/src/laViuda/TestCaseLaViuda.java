@@ -30,7 +30,7 @@ class TestCaseLaViuda {
 	        assertNotNull(hand);
 	        assertArrayEquals(suits, hand.getSuits());
 	        assertArrayEquals(ranks, hand.getRanks());
-	        assertEquals(5, hand.getCount());
+	        
 	    }
 	    
 //	    @Test

@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Deck {
 	
-	       private String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
-	       private  String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+	       public static String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
+	       public static String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
 	 
 	     public Deck(String[] suits, String[] ranks) {
 	    	 this.suits = suits;
