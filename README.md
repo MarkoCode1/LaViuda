@@ -25,4 +25,12 @@ So far I have added the code I have written in my repository under La Viuda fold
 Created several classes (I may or may not keep all of them)
 Wrote code and some tests 
 
+# Week 3:
+I was able to refine my code and clean it up quite a bit, I feel I have a better grasp at what I am trying to accomplish, I do have some running code and test cases but no GUI code yet, I plane on hopefully starting that next week. I did create my GUI wireframe in what I hope my code will look like. I most likely than not will make changes between now and the end of the project but this is what I envsion now. 
+
+Below shows my GUI wireframe, it depicts a table showing the player(s) hands and the tables hand, the skip button changes from player 1 to player 2. 
+![1713751198241-244bd62f-c94c-45b9-827a-4b7bef3748dd_1](https://github.com/MarkoCode1/LaViuda/assets/158511287/0c9884e1-1272-40de-a1e2-801343e155d0)
+
+
+
 
