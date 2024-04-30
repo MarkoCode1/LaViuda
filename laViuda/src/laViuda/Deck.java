@@ -1,7 +1,7 @@
 package laViuda;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class Deck {
 	
@@ -9,20 +9,19 @@ public class Deck {
 	       public static String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
 	 
 	     public Deck(String[] suits, String[] ranks) {
-	    	 this.suits = suits;
-	    	 this.ranks = ranks;
+	    	 Deck.suits = suits;
+	    	 Deck.ranks = ranks;
 	     }
 	
 	      
-	     public List<String> deck() {
-	    	    List<String> deck = new ArrayList<>();
+	     public static ArrayList<String> deck() {
+	    	    ArrayList<String> deck = new ArrayList<>();
 
 	    	    for (String rank : ranks) {
-	    	        String firstElement = rank;
 	    	        
 	    	        for (String suit : suits) {
 	    	        	
-	    	            String card = firstElement + " of " + suit;
+	    	            String card = rank + " of " + suit;
 	    	            deck.add(card);
 	    	        }
 	    	    }
@@ -36,10 +35,6 @@ public class Deck {
 	      
 	      public String[] getRanks() {
 	    	  return ranks;
-	      }
-	      
-	     
-	      
-	      
+	      }      
 }
 	 

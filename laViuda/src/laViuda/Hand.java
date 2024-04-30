@@ -13,9 +13,9 @@ public class Hand extends Deck {
 	}
 
 	
-	public List<String> getRandomCards(int count) {
-        List<String> fullDeck = deck();
-        List<String> randomCards = new ArrayList<>();
+	public static ArrayList<String> getRandomCards(int count) {
+		ArrayList<String> fullDeck = deck();
+		ArrayList<String> randomCards = new ArrayList<>();
         Random random = new Random();
 
         while (randomCards.size() < count && !fullDeck.isEmpty()) {
