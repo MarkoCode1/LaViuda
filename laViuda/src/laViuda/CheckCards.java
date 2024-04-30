@@ -54,7 +54,7 @@ public class CheckCards extends Hand  {
 }
 
 	
-	
+THis is a alihweojg
 	 
 	
 	
