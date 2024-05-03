@@ -6,21 +6,22 @@ import java.util.ArrayList;
 public class Deck {
 	
 	       public static String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
-	       public static String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+	       public static int[] ranks = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 	 
-	     public Deck(String[] suits, String[] ranks) {
+	     public Deck(String[] suits, int[] ranks) {
 	    	 Deck.suits = suits;
 	    	 Deck.ranks = ranks;
 	     }
-	
+	    
+
 	      
 	     public static ArrayList<String> deck() {
 	    	    ArrayList<String> deck = new ArrayList<>();
 
-	    	    for (String rank : ranks) {
-	    	        
-	    	        for (String suit : suits) {
-	    	        	
+	    	    for (int i = 0; i < ranks.length; i++) {
+	    	        int rank = ranks[i];
+	    	        for (int j = 0; j < suits.length; j++) {
+	    	            String suit = suits[j];
 	    	            String card = rank + " of " + suit;
 	    	            deck.add(card);
 	    	        }
@@ -33,7 +34,7 @@ public class Deck {
 	    	  return suits;
 	      }
 	      
-	      public String[] getRanks() {
+	      public int[] getRanks() {
 	    	  return ranks;
 	      }      
 }

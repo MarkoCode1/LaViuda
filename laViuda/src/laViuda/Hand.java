@@ -1,34 +1,21 @@
 package laViuda;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+
 
 public class Hand extends Deck {
 	
 	
-	public Hand(String[] suits, String[] ranks) {
-		super(suits, ranks);
-		
+	public Hand(String[] suits, int[] ranks) {
+		super(suits, ranks);	
 	}
 
-	
 	public static ArrayList<String> getRandomCards(int count) {
-		ArrayList<String> fullDeck = deck();
-		ArrayList<String> randomCards = new ArrayList<>();
-        Random random = new Random();
-
-        while (randomCards.size() < count && !fullDeck.isEmpty()) {
-            int index = random.nextInt(fullDeck.size());
-            randomCards.add(fullDeck.remove(index));
-        }
-
-        return randomCards;
-    }
-
-
-	
-	
+	    ArrayList<String> deck = deck();
+	    Collections.shuffle(deck, new Random());
+	    return new ArrayList<>(deck.subList(0, count));
+	}
 }
-	
-	

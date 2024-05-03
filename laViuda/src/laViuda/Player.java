@@ -19,8 +19,6 @@ public class Player extends JFrame {
 	public Hand hand;
 	private JPanel playerPanelHand;
 	private JPanel playerPanel;
-	private JLabel playerLabel;
-	private JTextField playerTextField;
 	
 	
 	public Player(Hand hand) {
@@ -32,13 +30,6 @@ public class Player extends JFrame {
 	playerPanel = new JPanel();
 	playerPanel.setLayout(new GridLayout(2,1));
 	
-	JPanel playerText = new JPanel();
-	playerLabel = new JLabel("Player Name: ");
-	playerTextField = new JTextField(10);
-	playerText.add(playerLabel);
-	playerText.add(playerTextField);
-	
-	
 	playerPanelHand = new JPanel();
 	playerPanelHand.setLayout(new GridLayout(1,5));
 	
@@ -48,19 +39,21 @@ public class Player extends JFrame {
         JButton button = new JButton(card);
 		playerPanelHand.add(button);
 		
-		playerPanel.add(playerText);
 		playerPanel.add(playerPanelHand);
 		
 		add(playerPanel, BorderLayout.SOUTH);
 			
 		}
-		
-	
-	
        
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	pack();
-	setVisible(true);
+	setVisible(false);
+	}
+
+
+	public void makeVisible() {
+		setVisible(true);
+		
 	}
 
 

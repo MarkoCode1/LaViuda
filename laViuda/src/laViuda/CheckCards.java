@@ -1,107 +1,78 @@
 package laViuda;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class CheckCards extends Hand  {
+public class CheckCards {
 
 
-	public CheckCards(String[] suits, String[] ranks) {
-		super(suits, ranks);
-	}
+public static void main(String[] args) {
+    String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
+    int[] ranks = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}; 
 
-	public static void main(String[] args) {
-		
-		Deck deck = new Deck(Deck.suits, Deck.ranks);
+    Hand hand = new Hand(suits, ranks);
+    ArrayList<String> randomCards = Hand.getRandomCards(5);
 
-        String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
-        ArrayList<String> randomCards = Hand.getRandomCards(5);
+    int[] rankCounts = new int[ranks.length];
 
-      
-        int[] rankCounts = new int[ranks.length];
-       
-        for (String card : randomCards) {
-            String rank = card.split(" ")[0];
-            for (int i = 0; i < ranks.length; i++) {
-                if (ranks[i].equals(rank)) {
-                    rankCounts[i]++;
-                    System.out.println(card);
-                    break; 
-                }
+    for (String card : randomCards) {
+    	int rank = Integer.parseInt(card.split(" ")[0]);
+    	
+    	
+    	
+        for (int i = 0; i < ranks.length; i++) {
+            if (ranks[i] == rank) {
+                rankCounts[i]++;
+                System.out.println(card);
+                break;
             }
         }
+    }
+   
 
-     
+        // Call the method to check card combinations
+        checkCardCombinations(rankCounts, ranks);
+}
+
+    public static void checkCardCombinations(int[] rankCounts, int[] ranks) {
         int pairCount = 0;
-      //check to see if there is a pair
+        
         for (int i = 0; i < ranks.length; i++) {
+            // Pairs
             if (rankCounts[i] == 2) {
-  
-            	System.out.println(ranks[i] + " appears twice.");
-                
-               //if there is a pair add 1 to pairCount
+                System.out.println(ranks[i] + " appears twice.");
+                // If there is a pair add 1 to pairCount
                 pairCount++;
             }
+            // Three of a kind
             if (rankCounts[i] == 3) {
-            	System.out.println(ranks[i] + " Three of a Kind.");
+                System.out.println(ranks[i] + " Three of a Kind.");
+            }
+            // Four of a kind
+            if (rankCounts[i] == 4) {
+                System.out.println(ranks[i] + " Four of a Kind.");
             }
         }
-        
-        //checks to see if there are more than 1 pair and if there is get a retun
+
+        // Two Pair
         if (pairCount == 2) {
-        	 System.out.println("Two pairs found!");
+            System.out.println("Two pairs found!");
         }
     }
 }
 
-	
-THis is a alihweojg
-	 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	
-//	public CheckCards(String[] suits, String[] ranks) {
-//		super(suits, ranks);
-//		// TODO Auto-generated constructor stub
-	
 
-//	 public static boolean isMatch(String card) {
-//		
-//	return card.contains("Ace"); // Check if the card string contains "Ace"
-//	    }
-//	
-//	 
-//	 public static void main(String[] args) {
-//	 Hand hand = new Hand(suits, ranks);
-//
-//	ArrayList<String> randomCards = hand.getRandomCards(5);
-//
-//     // Check if any of the random cards match the criteria
-//     for (String card : randomCards) {
-//         if (CheckCards.isMatch(card)) {
-//             System.out.println("Matching card found: " + card);
-//         	}
-//     	}
-// 	}
-//
-//}	
 
+//String rankString = "";
+//if (rank == 11) {
+//  rankString = "Jack";
+//} else if (rank == 12) {
+//  rankString = "Queen";
+//} else if (rank == 13) {
+//  rankString = "King";
+//} else if (rank == 1) {
+//  rankString = "Ace";
+//} else {
+//  rankString = String.valueOf(rank);
+//}
+//
