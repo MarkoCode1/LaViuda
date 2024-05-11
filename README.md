@@ -35,6 +35,12 @@ Below shows my GUI wireframe, it depicts a table showing the player(s) hands and
 Below is my Requirements Traceability Matrix for what I have worked on so far and when I need to work on in the near future. This week hasn't been too productive as I mainly focused on how to do GUI work in prperation for next week. I was able to work some GUI components within my code and create new code to check and compare poker hands and I was able to get get the code to check up to a 3 of a kind. 
 ![image](https://github.com/MarkoCode1/LaViuda/assets/158511287/b10f00d8-a0e9-4ea0-b9a9-9e26e3a27307)
 
+# Week 5:
+Wrote some GUI code that is able to bring up 2 windows, one invisible and one visible and when you push a button(Start) it makes the 2nd window visible (The Cards). Pics Below 
+
+![Screenshot 2024-05-06 170833](https://github.com/MarkoCode1/LaViuda/assets/158511287/edb8056d-f2e3-4d7f-829c-5751e2186153)
+![Screenshot 2024-05-06 170847](https://github.com/MarkoCode1/LaViuda/assets/158511287/a54e6b15-ffd0-4087-be79-270dd8e1e622)
+![Screenshot 2024-05-06 170924](https://github.com/MarkoCode1/LaViuda/assets/158511287/72fc24a5-e163-4650-bc4d-01b1eb4cc392)
 
 
 
