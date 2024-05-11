@@ -1,32 +1,43 @@
 package laViuda;
 
+import java.awt.GridLayout;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Table extends Hand{
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-	public Table(String[] suits, String[] ranks) {
-		super(suits, ranks);
-		hand = new Hand(suits, ranks);
-		
-	}
-	private static Hand hand;
+public class Table extends JFrame{
 
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		
-		 System.out.println("This is a test");
-		 
-		 System.out.println("Would you like to see the tbale hand? Yes / No");
-		 String tableHand = scanner.nextLine();
-		 
-		 Table table = new Table (suits, ranks);
-		 
-		if (tableHand.equalsIgnoreCase("Yes")) {
-			List<String> randomHand = hand.getRandomCards(5);
-			System.out.println("This is your hand: " + randomHand);
-	    } else {
-	        System.out.println("See Ya!");
-	    }	
-		}
+	
+	public Hand hand;
+	public JPanel tablePanelHand;
+	public JPanel tablePanel;
+
+	public Table(Hand hand) {
+			
+			this.hand = hand;
+
+	        tablePanel = new JPanel();
+	        tablePanel.setLayout(new GridLayout(2, 1));
+
+	        tablePanelHand = new JPanel();
+	        tablePanelHand.setLayout(new GridLayout(1, 5));
+
+	        ArrayList<String> randomCards = Hand.getRandomCards(5);
+
+	        for (String card : randomCards) {
+	            JButton tableButton = new JButton(card);
+	            tablePanelHand.add(tableButton);
+	        }
+
+	        tablePanel.add(tablePanelHand);
+	    }
+
+	    public JPanel getTablePanel() {
+	        return tablePanel;
+	    }
 	}
+

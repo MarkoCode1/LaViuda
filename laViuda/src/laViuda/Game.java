@@ -7,8 +7,8 @@ public class Game extends JFrame {
     private JPanel startPanel;
     private JButton start;
     private JLabel name;
-    private JTextField inputName;
-    private JPanel namePanel;
+    public JTextField inputName;
+  //  private JPanel namePanel;
     private final int WINDOW_WIDTH = 400;
     private final int WINDOW_HEIGHT = 300;
 
@@ -19,6 +19,7 @@ public class Game extends JFrame {
         buildPanel();
         add(startPanel);
         setVisible(true);
+        
     }
 
     private void buildPanel() {
@@ -32,11 +33,11 @@ public class Game extends JFrame {
         startPanel.add(start);
     }
 
-    private class StartButtonListener implements ActionListener {
+    public class StartButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-           
-            Player player = new Player(null);
-            player.makeVisible(); // Make the player window visible
+        	 String playerName = inputName.getText();
+            GameGui gameGui = new GameGui(playerName);
+			gameGui.makeVisible(); 
         }
     }
 }
