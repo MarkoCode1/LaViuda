@@ -60,9 +60,9 @@ This week I wrote a bit of code to allow players to input their name into the te
 ![Screenshot 2024-05-14 093709](https://github.com/MarkoCode1/LaViuda/assets/158511287/e9235b74-49ce-4df3-bdef-326e84b2571f)
 
 ![Screenshot 2024-05-14 093721](https://github.com/MarkoCode1/LaViuda/assets/158511287/18146055-b780-4f7c-82f5-3b8e0ac62639)
-``
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjk1MDIzMDUsLTE4MjQxNTMwNzJdfQ
+eyJoaXN0b3J5IjpbLTE2MDk2MzgxOTEsLTE4MjQxNTMwNzJdfQ
 ==
 -->
