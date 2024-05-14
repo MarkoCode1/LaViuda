@@ -1,5 +1,17 @@
 
 # La Viuda
+## Table of Contents
+[Week 1](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-1)
+
+[Week 2](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-2)
+
+[Week 3](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-3)
+
+[Week 4](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-4)
+
+[Week 5](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-5)
+
+[Week 6](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-6)
 ## Description:
 La Viuda is the mexican verison of Whiskey Poker where 2 or more players try to get the best poker hand. In between the players on the table are 5 cards faced down, the first player can either decide to switch their entire hand with the faced down cards or skip and let the next player decied. If smeone switches their hand, their cards end up on the table and the next person can choose to either swap one card or the entire hand to try to get the best hand. A round ends when someone knocks on the table and each person must show whatever hand they have and the end of that round. Each player gets 3 lives and the table gets one life, whoever loses all three lives first gets the tables life. The game keeps going till someone loses all their lives. 
 
@@ -48,22 +60,9 @@ This week I wrote a bit of code to allow players to input their name into the te
 ![Screenshot 2024-05-14 093709](https://github.com/MarkoCode1/LaViuda/assets/158511287/e9235b74-49ce-4df3-bdef-326e84b2571f)
 
 ![Screenshot 2024-05-14 093721](https://github.com/MarkoCode1/LaViuda/assets/158511287/18146055-b780-4f7c-82f5-3b8e0ac62639)
+``
 
-```
-## Table of Contents
-[Week 1](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-1)
-
-[Week 2](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-2)
-
-[Week 3](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-3)
-
-[Week 4](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-4)
-
-[Week 5](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-5)
-
-[Week 6](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-6)
-
-```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTQ3ODUzMywtMTgyNDE1MzA3Ml19
+eyJoaXN0b3J5IjpbLTIwMjk1MDIzMDUsLTE4MjQxNTMwNzJdfQ
+==
 -->
