@@ -49,7 +49,22 @@ This week I wrote a bit of code to allow players to input their name into the te
 
 ![Screenshot 2024-05-14 093721](https://github.com/MarkoCode1/LaViuda/assets/158511287/18146055-b780-4f7c-82f5-3b8e0ac62639)
 
+```
+[Week 1](link)
 
+[Week 2](link)
+
+[Week 3](link)
+
+[Week 4](link)
+
+[Week 4](link)
+
+[Week 4](link)
+
+[Week 4](link)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjQxNTMwNzJdfQ==
+eyJoaXN0b3J5IjpbLTEyMDAyOTE1NTksLTE4MjQxNTMwNzJdfQ
+==
 -->
