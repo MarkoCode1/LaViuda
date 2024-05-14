@@ -50,7 +50,7 @@ This week I wrote a bit of code to allow players to input their name into the te
 ![Screenshot 2024-05-14 093721](https://github.com/MarkoCode1/LaViuda/assets/158511287/18146055-b780-4f7c-82f5-3b8e0ac62639)
 
 ```
-[Week 1](link)
+[Week 1](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-1)
 
 [Week 2](link)
 
@@ -58,13 +58,12 @@ This week I wrote a bit of code to allow players to input their name into the te
 
 [Week 4](link)
 
-[Week 4](link)
+[Week 5](link)
 
-[Week 4](link)
+[Week 6](link)
 
-[Week 4](link)
+[Week 7](link)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDAyOTE1NTksLTE4MjQxNTMwNzJdfQ
-==
+eyJoaXN0b3J5IjpbMTI3MDA2NDU3MSwtMTgyNDE1MzA3Ml19
 -->
