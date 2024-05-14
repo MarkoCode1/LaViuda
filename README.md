@@ -42,6 +42,11 @@ Wrote some GUI code that is able to bring up 2 windows, one invisible and one vi
 ![Screenshot 2024-05-06 170847](https://github.com/MarkoCode1/LaViuda/assets/158511287/a54e6b15-ffd0-4087-be79-270dd8e1e622)
 ![Screenshot 2024-05-06 170924](https://github.com/MarkoCode1/LaViuda/assets/158511287/72fc24a5-e163-4650-bc4d-01b1eb4cc392)
 
+# Week 6:
+This week I wrote a bit of code to allow players to input their name into the text box and when they press start, whatever they put in the textbox will be added to the next window that pops up ontop of the players card hands. I also added code to have the player and table card hand be in a single window and added the gameplay buttons under the players hand. I added code to try to allow the players switch a single card from their hand to the tables hand. 
+![Screenshot 2024-05-14 093709](https://github.com/MarkoCode1/LaViuda/assets/158511287/e9235b74-49ce-4df3-bdef-326e84b2571f)
+
+![Screenshot 2024-05-14 093721](https://github.com/MarkoCode1/LaViuda/assets/158511287/18146055-b780-4f7c-82f5-3b8e0ac62639)
 
 
 
