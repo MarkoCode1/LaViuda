@@ -52,18 +52,17 @@ This week I wrote a bit of code to allow players to input their name into the te
 ```
 [Week 1](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-1)
 
-[Week 2](link)
+[Week 2](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-2)
 
-[Week 3](link)
+[Week 3](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-3)
 
-[Week 4](link)
+[Week 4](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-4)
 
-[Week 5](link)
+[Week 5](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-5)
 
-[Week 6](link)
+[Week 6](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-6)
 
-[Week 7](link)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MDA2NDU3MSwtMTgyNDE1MzA3Ml19
+eyJoaXN0b3J5IjpbLTcxMjU3MjA5NCwtMTgyNDE1MzA3Ml19
 -->
