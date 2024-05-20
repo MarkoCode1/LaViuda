@@ -72,6 +72,7 @@ public class Player extends JFrame {
 	public class SwapButtonListener implements ActionListener {
 		private JPanel playerPanelHand;
 	    private JPanel tablePanelHand;
+		private String playerName;
 
 	    public SwapButtonListener(JPanel playerPanelHand, JPanel tablePanelHand) {
 	        this.playerPanelHand = playerPanelHand;
