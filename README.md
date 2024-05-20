@@ -61,6 +61,9 @@ This week I wrote a bit of code to allow players to input their name into the te
 
 ![Screenshot 2024-05-14 093721](https://github.com/MarkoCode1/LaViuda/assets/158511287/18146055-b780-4f7c-82f5-3b8e0ac62639)
 
+# Week 7:
+Did not do much except clean up some of my code and made sure everything that I ahev written so far doesn't bring up any errors. Will work as much as I can with the time I have left to add to my project in the coming week.
+
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEwMTU1NTEzOTMsLTE2MDk2MzgxOTFdfQ
