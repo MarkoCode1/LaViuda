@@ -1,125 +1,109 @@
 package laViuda;
 
-
-import java.awt.Component;
-import java.awt.GridLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import javax.imageio.ImageIO;
 
 public class Player extends JFrame {
-	public static Table table;
-	public static Hand hand;
-	private JPanel playerPanelHand;
-	private JPanel playerPanel;
-	private String playerName;
-	private JLabel nameLabel;
-	private JPanel playPanel;
-	private JButton swapButton;
-	private JPanel tablePanelHand;
-	
-	
-	public Player(Hand hand, String playerName, JPanel tablePanelHand) {
-		  this.tablePanelHand = tablePanelHand;
-	      this.hand = hand;
-	      this.playerName = playerName;
+    public Table table;
+    public Hand hand;
+    private JPanel playerPanelHand;
+    private JPanel playerPanel;
+    private String playerName;
+    private JLabel nameLabel;
+    private JPanel playPanel;
+    private JButton swapButton;
+    private BufferedImage backgroundImage;
+    public ArrayList<JButton> playerButtons = new ArrayList<>();
 
-	        playerPanel = new JPanel();
-	        playerPanel.setLayout(new GridLayout(3, 1));
+    public Player(Hand hand, String playerName, Table table) {
+        this.table = table;
+        this.hand = hand;
+        this.playerName = playerName;
 
-	        nameLabel = new JLabel("Player: " + playerName);
-	       
-	        playerPanelHand = new JPanel();
-	        playerPanelHand.setLayout(new GridLayout(1, 5));
-	        
-	        playPanel = new JPanel();
-	        playPanel.setLayout(new GridLayout(1,4));
-	       
-	        swapButton = new JButton("Swap Hand");
+        try {
+            backgroundImage = ImageIO.read(new File("C:\\Users\\Marko Yovanovich\\OneDrive\\Desktop\\La Viuda Work\\360_F_322485076_wuZ8D5R9biTRNSGJMWZBor9uUcO1Md59.jpg"));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
 
-	        swapButton.addActionListener(new SwapButtonListener(playerPanelHand, tablePanelHand));
-	        
-	        JButton SwapCard = new JButton("Swap Card");
-	        
-	        JButton Skip = new JButton("Skip Turn");
-	        
-	        JButton Knock = new JButton("End Round");
-	        
-	        playPanel.add(swapButton);
-	        playPanel.add(SwapCard);
-	        playPanel.add(Skip);
-	        playPanel.add(Knock);
-	        
-	        
+        playerPanel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                if (backgroundImage != null) {
+                    g.drawImage(backgroundImage, 0, 0, getWidth(), getHeight(), this);
+                }
+            }
+        };
+        playerPanel.setLayout(new GridLayout(3, 1));
 
-	        ArrayList<String> randomCards = Hand.getRandomCards(5);
+        nameLabel = new JLabel("Player: " + playerName);
+        Font font = new Font("Times New Roman", Font.BOLD, 25);
+        nameLabel.setFont(font);
+        nameLabel.setForeground(Color.WHITE);
 
-	        for (String card : randomCards) {
-	            JButton playerButton = new JButton(card);
-	            playerPanelHand.add(playerButton);
-	        }
-	       
-	        playerPanel.add(nameLabel);
-	        playerPanel.add(playerPanelHand);
-	        playerPanel.add(playPanel);
-	    }
+        playerPanelHand = new JPanel();
+        playerPanelHand.setLayout(new GridLayout(1, 5));
+        playerPanelHand.setOpaque(false);
 
-	public class SwapButtonListener implements ActionListener {
-		private JPanel playerPanelHand;
-	    private JPanel tablePanelHand;
-		private String playerName;
+        playPanel = new JPanel();
+        playPanel.setLayout(new GridLayout(1, 4));
+        playPanel.setOpaque(false);
 
-	    public SwapButtonListener(JPanel playerPanelHand, JPanel tablePanelHand) {
-	        this.playerPanelHand = playerPanelHand;
-	        this.tablePanelHand = tablePanelHand;
-	    }
+        swapButton = new JButton("Swap Hand");
+        swapButton.addActionListener(new SwapButtonListener());
 
-	public void actionPerformed(ActionEvent e) {
-		 if (playerPanelHand.getComponentCount() >= 5 && tablePanelHand.getComponentCount() >= 5) {
-	            Component[] playerButtons = new Component[5];
-	            Component[] tableButtons = new Component[5];
+        JButton swapCardButton = new JButton("Swap Card");
+        JButton skipButton = new JButton("Skip Turn");
+        JButton knockButton = new JButton("End Round");
 
-	            // Get the first 5 buttons from each panel
-	            for (int i = 0; i < 5; i++) {
-	                playerButtons[i] = playerPanelHand.getComponent(i);
-	                tableButtons[i] = tablePanelHand.getComponent(i);
-	            }
+        playPanel.add(swapButton);
+        playPanel.add(swapCardButton);
+        playPanel.add(skipButton);
+        playPanel.add(knockButton);
 
-	            // Remove all buttons from panels
-	            playerPanelHand.removeAll();
-	            tablePanelHand.removeAll();
+        ArrayList<String> randomCards = Hand.getRandomCards(5);
 
-	            // Add buttons from tablePanelHand to playerPanelHand and vice versa
-	            for (Component button : tableButtons) {
-	                playerPanelHand.add(button);
-	            }
-	            for (Component button : playerButtons) {
-	                tablePanelHand.add(button);
-	            }
+        if (randomCards == null) {
+            throw new IllegalStateException("Random cards cannot be null");
+        }
 
-	            playerPanelHand.revalidate();
-	            tablePanelHand.revalidate();
-	        }
-	    }
-	
-	
-	
-	 public JButton getSwapButton() {
-	        return swapButton;
-	    }
-	
-	    
-	    public void setPlayerName(String playerName) {
-	    	this.playerName = playerName;
-	    }  
-}
+        for (String card : randomCards) {
+            JButton playerButton = new JButton(card);
+            playerButtons.add(playerButton);
+            playerPanelHand.add(playerButton);
+        }
 
-	public Component getPlayerPanel() {
-		return playerPanel;
-	}
+        playerPanel.add(nameLabel);
+        playerPanel.add(playerPanelHand);
+        playerPanel.add(playPanel);
+    }
+
+    public Component getPlayerPanel() {
+        return playerPanel;
+    }
+
+    private class SwapButtonListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (table == null) {
+                throw new IllegalStateException("Table is not initialized");
+            }
+
+            for (int i = 0; i < playerButtons.size(); i++) {
+                String playerCard = playerButtons.get(i).getText();
+                String tableCard = table.tableButtons.get(i).getText();
+
+                playerButtons.get(i).setText(tableCard);
+                table.tableButtons.get(i).setText(playerCard);
+            }
+        }
+    }
 }

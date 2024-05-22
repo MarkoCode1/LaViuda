@@ -1,44 +1,46 @@
 package laViuda;
 
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
+import javax.swing.*;
+import java.awt.*;
 
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+public class GameGui extends JFrame {
 
-public class GameGui extends JFrame  {
-	  
-	public GameGui(String playerName) {
-			Table table = new Table(null);
-			Player player = new Player(null, playerName, null);
+    private Table table;
+    private Player player;
 
-	        setTitle("Combined Table and Player GUI");
-	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    public GameGui(String playerName) {
+        // Initialize Hand
+        Hand hand = new Hand(new String[]{"Hearts", "Diamonds", "Clubs", "Spades"}, new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13});
 
-	        setLayout(new BorderLayout());
-	        
-	        JPanel gamePanel = new JPanel();
-	        gamePanel.setLayout(new GridLayout(2,1));
-	        
-	        gamePanel.add(table.getTablePanel());
-	        gamePanel.add(player.getPlayerPanel());
-	        
-	        add(gamePanel, BorderLayout.CENTER);
+        // Initialize Table with Hand
+        table = new Table(hand);
 
-	        pack();
-	        setLocationRelativeTo(null);
-	        setVisible(false);
-	    }
-	
-	public void makeVisible() {
-		setVisible(true);
-		
-	}
+        // Initialize Player with Hand and Table
+        player = new Player(hand, playerName, table);
 
-	    public static void main(String[] args) {
-	        new GameGui(null);
-	        Game startGui = new Game();
-	    }
-	}
-// THis is another test ahhh
+        setTitle("Combined Table and Player GUI");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
+
+        JPanel gamePanel = new JPanel();
+        gamePanel.setLayout(new GridLayout(2, 1));
+
+        gamePanel.add(table.getTablePanel());
+        gamePanel.add(player.getPlayerPanel());
+
+        add(gamePanel, BorderLayout.CENTER);
+
+        pack();
+        setLocationRelativeTo(null);
+        setVisible(false);
+    }
+
+    public void makeVisible() {
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        // Start GUI (assuming Game is another part of the application)
+        Game startGui = new Game();
+    }
+}
