@@ -45,7 +45,7 @@ public class CheckCards {
             }
             // Pairs
             else if (rankCounts[i] == 2) {
-                result += ranks[i] + " appears twice.\n";
+                result += ranks[i] + " Two of a kind.\n";
                 pairCount++;
             }
         }

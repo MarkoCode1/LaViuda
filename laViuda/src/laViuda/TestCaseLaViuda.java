@@ -18,7 +18,7 @@ public class TestCaseLaViuda {
 	public void testCheckCardCombinations() {
 	    int[] rankCounts = {0, 0, 3, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0};
 	    int[] ranks = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-	    String expected = "3 Three of a Kind.\n4 appears twice.\n8 appears twice.\nTwo pairs found!\n";
+	    String expected = "3 Three of a Kind.\n4 Two of a kind.\n8 Two of a kind.\nTwo pairs found!\n";
 
 	    String result = CheckCards.checkCardCombinations(rankCounts, ranks);
 
