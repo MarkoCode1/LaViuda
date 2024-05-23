@@ -3,7 +3,7 @@ package laViuda;
 import java.util.ArrayList;
 
 
-public abstract class Deck {
+public class Deck {
 	
 	       private static String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
 	       static int[] ranks = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};

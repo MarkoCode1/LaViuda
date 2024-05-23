@@ -38,26 +38,20 @@ public class TestCaseLaViuda {
 
 	    @Test
 	    public void testGetRandomCards() {
-            // Define suits and ranks
 	    	String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
 	    	int[] ranks = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
-	        // Create a new hand
 	    	Hand hand = new Hand(suits, ranks);
 
-	        // Test getting random cards
 	    	int count = 5;
 	    	ArrayList<String> randomCards = hand.getRandomCards(count);
 
-	        // Ensure correct number of cards are returned
 	    	assertEquals(count, randomCards.size());
 
-	        // Ensure cards are unique
 	    	ArrayList<String> uniqueCards = new ArrayList<>(randomCards);
 	    	uniqueCards.removeAll(randomCards);
 	    	assertTrue(uniqueCards.isEmpty());
 
-	        // Ensure cards are from the deck
 	    	ArrayList<String> deck = new ArrayList<>(Deck.deck());
 	    	deck.removeAll(randomCards);
 	    	assertEquals(deck.size(), Deck.deck().size() - count);

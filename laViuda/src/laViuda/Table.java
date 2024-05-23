@@ -49,6 +49,10 @@ public class Table extends JFrame {
 
         ArrayList<String> randomCards = Hand.getRandomCards(5);
 
+        if (randomCards == null) {
+            throw new IllegalStateException("Random cards cannot be null");
+        }
+        
         for (String card : randomCards) {
             JButton tableButton = new JButton(card);
             tableButtons.add(tableButton);
