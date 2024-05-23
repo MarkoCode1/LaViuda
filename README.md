@@ -63,15 +63,25 @@ Wrote some GUI code that is able to bring up 2 windows, one invisible and one vi
 
 # Week 6:
 This week I wrote a bit of code to allow players to input their name into the text box and when they press start, whatever they put in the textbox will be added to the next window that pops up ontop of the players card hands. I also added code to have the player and table card hand be in a single window and added the gameplay buttons under the players hand. I added code to try to allow the players switch a single card from their hand to the tables hand. 
+
 ![Screenshot 2024-05-14 093709](https://github.com/MarkoCode1/LaViuda/assets/158511287/e9235b74-49ce-4df3-bdef-326e84b2571f)
 
 ![Screenshot 2024-05-14 093721](https://github.com/MarkoCode1/LaViuda/assets/158511287/18146055-b780-4f7c-82f5-3b8e0ac62639)
 
 # Week 7:
-Did not do much except clean up some of my code and made sure everything that I ahev written so far doesn't bring up any errors. Will work as much as I can with the time I have left to add to my project in the coming week.
+Did not do much except clean up some of my code and made sure everything that I have written so far doesn't bring up any errors. Will work as much as I can with the time I have left to add to my project in the coming week.
+
+# Week 8:
+I completed a lot this week, I was able to make my GUI windows look nicer and have backgrounds, added some more code to pass the learning outcome for the project, fixed the swap hand code so now when a user pushes the button it actually swaps the hand from the player and the table. You can see below the new main page of the game and the play area for the player and table. You may notice that the the table and player hands get swapped between the two photos.
+
+![image](https://github.com/MarkoCode1/LaViuda/assets/158511287/1dd3c274-5286-4149-aba9-940673f35514)
+![image](https://github.com/MarkoCode1/LaViuda/assets/158511287/a9f7a0de-09e9-48be-9209-15e63f7eb8b0)
+![image](https://github.com/MarkoCode1/LaViuda/assets/158511287/d03cb6af-cc14-4d52-8c65-d9fc46871f3a)
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1MTY4OTcwLC0xMDE1NTUxMzkzLC0xNj
-A5NjM4MTkxXX0=
+eyJoaXN0b3J5IjpbMzUyODY0MTQwLDcxNTE2ODk3MCwtMTAxNT
+U1MTM5MywtMTYwOTYzODE5MV19
 -->
