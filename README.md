@@ -12,6 +12,12 @@
 [Week 5](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-5)
 
 [Week 6](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-6)
+
+[Week 7](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-7)
+
+[Week 8](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-6)
+
+
 ## Description:
 La Viuda is the mexican verison of Whiskey Poker where 2 or more players try to get the best poker hand. In between the players on the table are 5 cards faced down, the first player can either decide to switch their entire hand with the faced down cards or skip and let the next player decied. If smeone switches their hand, their cards end up on the table and the next person can choose to either swap one card or the entire hand to try to get the best hand. A round ends when someone knocks on the table and each person must show whatever hand they have and the end of that round. Each player gets 3 lives and the table gets one life, whoever loses all three lives first gets the tables life. The game keeps going till someone loses all their lives. 
 
@@ -66,6 +72,6 @@ Did not do much except clean up some of my code and made sure everything that I 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTcwMDAxODgsLTEwMTU1NTEzOTMsLT
-E2MDk2MzgxOTFdfQ==
+eyJoaXN0b3J5IjpbNzE1MTY4OTcwLC0xMDE1NTUxMzkzLC0xNj
+A5NjM4MTkxXX0=
 -->
