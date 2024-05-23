@@ -15,7 +15,7 @@
 
 [Week 7](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-7)
 
-[Week 8](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-6)
+[Week 8](https://github.com/MarkoCode1/LaViuda?tab=readme-ov-file#week-8)
 
 
 ## Description:
@@ -82,6 +82,6 @@ I completed a lot this week, I was able to make my GUI windows look nicer and ha
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUyODY0MTQwLDcxNTE2ODk3MCwtMTAxNT
-U1MTM5MywtMTYwOTYzODE5MV19
+eyJoaXN0b3J5IjpbLTIwMjM0NDAzNzAsMzUyODY0MTQwLDcxNT
+E2ODk3MCwtMTAxNTU1MTM5MywtMTYwOTYzODE5MV19
 -->
